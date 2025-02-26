@@ -1,0 +1,16 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+
+  background-image: url('https://www.classswift.viewsonic.io/assets/mask_group-de19fec1.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+}
