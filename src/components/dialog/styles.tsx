@@ -32,4 +32,5 @@ export const DialogContent = styled.div`
 
   border-radius: 8px;
   background-color: #f6f6f6;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
 `;
