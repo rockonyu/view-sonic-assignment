@@ -1,0 +1,74 @@
+[
+  {
+    "seatId": 1,
+    "name": "Philip",
+    "score": 2,
+    "groupId": 1
+  },
+  {
+    "seatId": 2,
+    "name": "Darrell",
+    "score": 5,
+    "groupId": 1
+  },
+  {
+    "seatId": 4,
+    "name": "Cody",
+    "score": 9,
+    "groupId": 1
+  },
+  {
+    "seatId": 7,
+    "name": "Bessie",
+    "score": 0,
+    "groupId": 1
+  },
+  {
+    "seatId": 8,
+    "name": "Wendy",
+    "score": 3,
+    "groupId": 1
+  },
+  {
+    "seatId": 10,
+    "name": "Esther",
+    "score": 1,
+    "groupId": 2
+  },
+  {
+    "seatId": 12,
+    "name": "Gloria",
+    "score": 1,
+    "groupId": 2
+  },
+  {
+    "seatId": 14,
+    "name": "Lee",
+    "score": 2,
+    "groupId": 2
+  },
+  {
+    "seatId": 16,
+    "name": "Ann",
+    "score": 0,
+    "groupId": 2
+  },
+  {
+    "seatId": 17,
+    "name": "Jacob",
+    "score": 8,
+    "groupId": 2
+  },
+  {
+    "seatId": 18,
+    "name": "Calvin",
+    "score": 2,
+    "groupId": 3
+  },
+  {
+    "seatId": 20,
+    "name": "Joe",
+    "score": 0,
+    "groupId": 3
+  }
+]
