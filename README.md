@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# View Sonic Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![UI 預覽](./src/assets/preview.png)
 
-Currently, two official plugins are available:
+網站採用 React、Redux、styled-components 開發，搭配 lucide-react 圖示與 MSW 的 API 假資料，沒有其他額外的依賴。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+檔案與資料夾名稱都是採用 Next.js 的全小寫規則。
 
-## Expanding the ESLint configuration
+```
+# 安裝依賴
+pnpm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# 本地專案執行
+pnpm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 實作
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+偏好 Shadcn UI 或 Radix UI 的可組合元件風格，參考其使用方式實作了 `dialog` `popover` `tabs` 簡易版的共用元件。
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Store 的結構以滿足題目條件與能讓元件有效率存取為主要考量，邏輯在 `@/features/class/class-slice.ts` 這支檔案。
+
+## 專案結構
+
+- app - 主要是 store 設定與初始發出 API 的頁面
+- components - 可組合共用元件
+- constants - API 基礎路徑與 RWD 設定
+- features - 主要有教室 (classroom) 與加入教室 (join-class) 兩個元件。Store 的 class 屬性結構放在 class/class-slice 檔案。
+- mocks - 包含取得課程資訊與加入學員兩支 API
+- services/api - 將呼叫 API 包裝成 hook 提供類似 RTK Query 的操作
